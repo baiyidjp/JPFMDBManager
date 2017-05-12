@@ -10,6 +10,11 @@
 
 @interface JPFMDBManager : NSObject
 
+/**
+ 单例 用来调用所用方法
+
+ @return 唯一的实例对象
+ */
 + (instancetype)sharedManager;
 
 /**
@@ -23,7 +28,7 @@
  插入数据
 
  @param tableName 要插入的数据表
- @param dataArray 插入的数据集合 字典数组类型 @[@{},@{}]
+ @param dataArray 插入的数据集合 字典数组类型 @[@{},@{}] 可以自己根据扩展 模型数组
  */
 - (void)jp_InsertDataWithTableName:(NSString *)tableName
                              Array:(NSArray *)dataArray;
@@ -40,7 +45,7 @@
  删除表中数据
 
  @param tableName 表名
- @param where 条件 可穿nil 为删除表中所有数据
+ @param where 条件 可穿nil 为删除表中所有数据 (用来拼接Sql语句)
  */
 - (void)jp_DeleteDataWithTableName:(NSString *)tableName
                           WhereStr:(NSString *)where;
