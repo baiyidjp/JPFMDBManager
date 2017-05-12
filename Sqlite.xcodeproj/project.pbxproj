@@ -13,6 +13,13 @@
 		F5F8B52A1EC449B4000CC225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F8B5281EC449B4000CC225 /* Main.storyboard */; };
 		F5F8B52C1EC449B4000CC225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5F8B52B1EC449B4000CC225 /* Assets.xcassets */; };
 		F5F8B52F1EC449B4000CC225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5F8B52D1EC449B4000CC225 /* LaunchScreen.storyboard */; };
+		F5F8B5391EC449E7000CC225 /* JPFMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F8B5381EC449E7000CC225 /* JPFMDBManager.m */; };
+		F5F8B5461EC44AFF000CC225 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F8B53C1EC44AFF000CC225 /* FMDatabase.m */; };
+		F5F8B5471EC44AFF000CC225 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F8B53E1EC44AFF000CC225 /* FMDatabaseAdditions.m */; };
+		F5F8B5481EC44AFF000CC225 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F8B5401EC44AFF000CC225 /* FMDatabasePool.m */; };
+		F5F8B5491EC44AFF000CC225 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F8B5421EC44AFF000CC225 /* FMDatabaseQueue.m */; };
+		F5F8B54A1EC44AFF000CC225 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F8B5451EC44AFF000CC225 /* FMResultSet.m */; };
+		F5F8B54D1EC44B1A000CC225 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F8B54C1EC44B1A000CC225 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,20 @@
 		F5F8B52B1EC449B4000CC225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5F8B52E1EC449B4000CC225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5F8B5301EC449B4000CC225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5F8B5371EC449E7000CC225 /* JPFMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPFMDBManager.h; sourceTree = "<group>"; };
+		F5F8B5381EC449E7000CC225 /* JPFMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPFMDBManager.m; sourceTree = "<group>"; };
+		F5F8B53B1EC44AFF000CC225 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		F5F8B53C1EC44AFF000CC225 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		F5F8B53D1EC44AFF000CC225 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		F5F8B53E1EC44AFF000CC225 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		F5F8B53F1EC44AFF000CC225 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		F5F8B5401EC44AFF000CC225 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		F5F8B5411EC44AFF000CC225 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		F5F8B5421EC44AFF000CC225 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		F5F8B5431EC44AFF000CC225 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		F5F8B5441EC44AFF000CC225 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		F5F8B5451EC44AFF000CC225 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		F5F8B54C1EC44B1A000CC225 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F8B54D1EC44B1A000CC225 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +66,7 @@
 			children = (
 				F5F8B51E1EC449B3000CC225 /* Sqlite */,
 				F5F8B51D1EC449B3000CC225 /* Products */,
+				F5F8B54B1EC44B1A000CC225 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +81,8 @@
 		F5F8B51E1EC449B3000CC225 /* Sqlite */ = {
 			isa = PBXGroup;
 			children = (
+				F5F8B53A1EC44AFF000CC225 /* fmdb */,
+				F5F8B5361EC449E7000CC225 /* DBHandle */,
 				F5F8B5221EC449B3000CC225 /* AppDelegate.h */,
 				F5F8B5231EC449B4000CC225 /* AppDelegate.m */,
 				F5F8B5251EC449B4000CC225 /* ViewController.h */,
@@ -77,6 +102,41 @@
 				F5F8B5201EC449B3000CC225 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5F8B5361EC449E7000CC225 /* DBHandle */ = {
+			isa = PBXGroup;
+			children = (
+				F5F8B5371EC449E7000CC225 /* JPFMDBManager.h */,
+				F5F8B5381EC449E7000CC225 /* JPFMDBManager.m */,
+			);
+			path = DBHandle;
+			sourceTree = "<group>";
+		};
+		F5F8B53A1EC44AFF000CC225 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				F5F8B53B1EC44AFF000CC225 /* FMDatabase.h */,
+				F5F8B53C1EC44AFF000CC225 /* FMDatabase.m */,
+				F5F8B53D1EC44AFF000CC225 /* FMDatabaseAdditions.h */,
+				F5F8B53E1EC44AFF000CC225 /* FMDatabaseAdditions.m */,
+				F5F8B53F1EC44AFF000CC225 /* FMDatabasePool.h */,
+				F5F8B5401EC44AFF000CC225 /* FMDatabasePool.m */,
+				F5F8B5411EC44AFF000CC225 /* FMDatabaseQueue.h */,
+				F5F8B5421EC44AFF000CC225 /* FMDatabaseQueue.m */,
+				F5F8B5431EC44AFF000CC225 /* FMDB.h */,
+				F5F8B5441EC44AFF000CC225 /* FMResultSet.h */,
+				F5F8B5451EC44AFF000CC225 /* FMResultSet.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		F5F8B54B1EC44B1A000CC225 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5F8B54C1EC44B1A000CC225 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +210,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F8B5391EC449E7000CC225 /* JPFMDBManager.m in Sources */,
+				F5F8B5491EC44AFF000CC225 /* FMDatabaseQueue.m in Sources */,
 				F5F8B5271EC449B4000CC225 /* ViewController.m in Sources */,
 				F5F8B5241EC449B4000CC225 /* AppDelegate.m in Sources */,
+				F5F8B5461EC44AFF000CC225 /* FMDatabase.m in Sources */,
+				F5F8B5481EC44AFF000CC225 /* FMDatabasePool.m in Sources */,
+				F5F8B54A1EC44AFF000CC225 /* FMResultSet.m in Sources */,
 				F5F8B5211EC449B3000CC225 /* main.m in Sources */,
+				F5F8B5471EC44AFF000CC225 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
