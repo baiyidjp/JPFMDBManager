@@ -112,10 +112,12 @@ static FMDatabaseQueue *databaseQueue;
 }
 
 #pragma mark -查询数据表
-- (NSArray *)jp_SelectDataWithTableName:(NSString *)tableName {
+- (NSArray *)jp_SelectDataWithTableName:(NSString *)tableName WhereStr:(NSString *)where{
     
     NSString *selectSql = [NSString stringWithFormat:@"SELECT * FROM %@",tableName];
-    
+    if (where.length) {
+        selectSql = [selectSql stringByAppendingString:where];
+    }
     NSMutableArray *selectDataArray = [NSMutableArray array];
     
     [databaseQueue inDatabase:^(FMDatabase *db) {

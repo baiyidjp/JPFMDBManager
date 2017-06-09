@@ -56,9 +56,9 @@
 }
 - (IBAction)selectData:(id)sender {
     
-    NSArray *data1 = [[JPFMDBManager sharedManager] jp_SelectDataWithTableName:@"T_DataTable1"];
+    NSArray *data1 = [[JPFMDBManager sharedManager] jp_SelectDataWithTableName:@"T_DataTable1" WhereStr:nil];
     NSLog(@"表单1数据 --- %@",data1);
-    NSArray *data2 = [[JPFMDBManager sharedManager] jp_SelectDataWithTableName:@"T_DataTable2"];
+    NSArray *data2 = [[JPFMDBManager sharedManager] jp_SelectDataWithTableName:@"T_DataTable2" WhereStr:@" WHERE id2 = '21' "];
     NSLog(@"表单2数据 --- %@",data2);
 
 }
