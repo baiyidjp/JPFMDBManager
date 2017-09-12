@@ -26,7 +26,7 @@ static FMDatabaseQueue *databaseQueue;
     dispatch_once(&onceToken, ^{
         if (dhManager == nil) {
             dhManager = [[JPFMDBManager alloc] init];
-            NSString *dbPathName = @"JPFMDBManager.db";
+            NSString *dbPathName = @"DhhsData.db";
             NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
             NSString *dbPath = [path stringByAppendingPathComponent:dbPathName];
             
@@ -164,5 +164,20 @@ static FMDatabaseQueue *databaseQueue;
     }];
 }
 
+- (void)jp_DeleteTableWithTableName:(NSString *)tableName {
+    
+    NSString *sqlstr = [NSString stringWithFormat:@"DROP TABLE %@", tableName];
+    
+    [databaseQueue inDatabase:^(FMDatabase *db) {
+        BOOL isDeleteSuccess = [db executeUpdate:sqlstr];
+        if (isDeleteSuccess) {
+            NSLog(@"删除表成功 %@",tableName);
+        }else {
+            NSLog(@"删除表失败 %@",tableName);
+            NSLog(@"%@",db.lastErrorMessage);
+        }
+
+    }];
+}
 
 @end

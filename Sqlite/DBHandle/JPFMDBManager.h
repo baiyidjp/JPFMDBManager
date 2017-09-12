@@ -37,7 +37,7 @@
  查询表中所有数据
 
  @param tableName 要查询的表名
- @param where 条件制定key查询 可穿nil 为查询表中所有数据 (用来拼接Sql语句)
+ @param where 条件制定key查询 可穿nil 为查询表中所有数据 (用来拼接Sql语句)  @" WHERE id2 = '21' "
  @return 返回查询的数据
  */
 - (NSArray *)jp_SelectDataWithTableName:(NSString *)tableName
@@ -51,5 +51,13 @@
  */
 - (void)jp_DeleteDataWithTableName:(NSString *)tableName
                           WhereStr:(NSString *)where;
+
+
+/**
+ 删除表
+
+ @param tableName 表名
+ */
+- (void)jp_DeleteTableWithTableName:(NSString *)tableName;
 
 @end
